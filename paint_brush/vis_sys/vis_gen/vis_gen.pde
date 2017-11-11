@@ -8,6 +8,7 @@ float c = 0.01;
 
 void setup() {
   size(1024,768);
+  background(0);
 }
 
 void draw() {
