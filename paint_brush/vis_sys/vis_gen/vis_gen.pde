@@ -1,10 +1,10 @@
-float x = 0;
+float x = 0.01;
 float y = 0;
 float z = 0;
 
-float a = 0.01;
-float b = 0.01;
-float c = 0.01;
+float a = 10;
+float b = 28;
+float c = 8.0/3.0;
 
 void setup() {
   size(1024,768);
