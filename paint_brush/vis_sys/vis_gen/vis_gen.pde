@@ -12,7 +12,7 @@ void setup() {
 }
 
 void draw() {
-  float dt = 1;
+  float dt = 0.01;
   float dx = (a * (y - x)) * dt;
   float dy = (x * (b - z) - y) * dt;
   float dz = (x * y - c * z) * dt;
@@ -20,6 +20,10 @@ void draw() {
   x = x + dx;
   y = y + dy;
   z = z + dz;  
-  
-  println(x, y, z);
+ 
+  translate(width / 2, height / 2);
+  stroke(255);
+  point(x, y, z);
+ 
+  //println(x, y, z);
 }
