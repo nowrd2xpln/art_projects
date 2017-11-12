@@ -36,10 +36,10 @@ void draw() {
   point(x, y, z);
   noFill();
   
+  beginShape();
   for (PVector v : points) {
-    point(v.x, v.y, v.z);
+    vertex(v.x, v.y, v.z);
   }
-  
   endShape();
   //println(x, y, z);
 }
