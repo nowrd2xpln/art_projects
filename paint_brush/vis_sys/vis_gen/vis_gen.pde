@@ -28,6 +28,7 @@ void draw() {
   z = z + dz;  
  
   translate(width / 2, height / 2);
+  scale(5);
   stroke(255);
   point(x, y, z);
  
