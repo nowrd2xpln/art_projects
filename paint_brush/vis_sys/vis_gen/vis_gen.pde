@@ -30,7 +30,8 @@ void draw() {
   z = z + dz;  
   
   points.add(new PVector(x, y, z));
-  translate(width / 2, height / 2);
+  //translate(width / 2, height / 2);
+  translate(0, 0, -80);
   scale(5);
   stroke(255);
   point(x, y, z);
