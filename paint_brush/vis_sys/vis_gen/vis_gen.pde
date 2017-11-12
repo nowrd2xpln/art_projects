@@ -13,7 +13,7 @@ ArrayList<PVector> points = new ArrayList<PVector>();
 PeasyCam cam;
 
 void setup() {
-  size(800, 600, P3D);
+  size(1024, 768, P3D);
   
   cam = new PeasyCam(this, 500);
 }
@@ -29,11 +29,17 @@ void draw() {
   y = y + dy;
   z = z + dz;  
   
+  points.add(new PVector(x, y, z));
   translate(width / 2, height / 2);
   scale(5);
   stroke(255);
   point(x, y, z);
-
-  points.add(new PVector(x, y, z));
+  noFill();
+  
+  for (PVector v : points) {
+    point(v.x, v.y, v.z);
+  }
+  
+  endShape();
   //println(x, y, z);
 }
